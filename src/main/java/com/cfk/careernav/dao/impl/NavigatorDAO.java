@@ -27,7 +27,7 @@ public class NavigatorDAO{
     public Occupation getOccupation(String onetCode) {
         Occupation o = heySQL.queryForObject("SELECT * FROM occupation_data WHERE onetsoc_code = ?", new OccupationMapper(), onetCode);
         if(o != null){
-            o.setAlternateTitles(heySQL.query("SELECT * FROM alternate_titles WHERE onetsoc_code = ?", new StringMapper()));
+            o.setAlternateTitles(heySQL.query("SELECT * FROM alternate_titles WHERE onetsoc_code = ?", new StringMapper(), o.getCode()));
         }
         return o;
     }
