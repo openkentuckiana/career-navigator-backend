@@ -4,6 +4,7 @@ import com.cfk.careernav.model.Occupation;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 /*
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
- * @author austynhill
+ * @author LilacLlama
  */
 @RestController
 public class DataController {
@@ -27,4 +28,8 @@ public class DataController {
         return dataLayer.getAllOccupations();
     }
     
+    @GetMapping("/occupation/id/{id}")
+    public Occupation getOccupation(@PathVariable String id){
+        return dataLayer.getOccupation(id);
+    }
 }

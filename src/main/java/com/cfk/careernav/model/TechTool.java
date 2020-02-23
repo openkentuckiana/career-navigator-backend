@@ -10,7 +10,7 @@ import lombok.Data;
 
 /**
  *
- * @author austynhill
+ * @author LilacLlama
  */
 @Data
 public class TechTool {

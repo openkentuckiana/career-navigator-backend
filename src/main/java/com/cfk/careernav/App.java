@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  *
- * @author austynhill
+ * @author LilacLlama
  */
 @SpringBootApplication
 public class App {

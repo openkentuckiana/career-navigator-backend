@@ -12,7 +12,7 @@ import org.springframework.jdbc.core.RowMapper;
 
 /**
  *
- * @author austynhill
+ * @author LilacLlama
  */
 public class ToolMapper implements RowMapper<TechTool>{
 

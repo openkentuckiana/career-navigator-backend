@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 
 /**
  *
- * @author austynhill
+ * @author LilacLlama
  */
 @Data @NoArgsConstructor
 public class Occupation {
